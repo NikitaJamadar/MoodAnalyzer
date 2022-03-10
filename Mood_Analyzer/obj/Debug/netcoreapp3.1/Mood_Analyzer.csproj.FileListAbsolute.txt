@@ -1,0 +1,14 @@
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\bin\Debug\netcoreapp3.1\Mood_Analyzer.exe
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\bin\Debug\netcoreapp3.1\Mood_Analyzer.deps.json
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\bin\Debug\netcoreapp3.1\Mood_Analyzer.runtimeconfig.json
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\bin\Debug\netcoreapp3.1\Mood_Analyzer.runtimeconfig.dev.json
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\bin\Debug\netcoreapp3.1\Mood_Analyzer.dll
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\bin\Debug\netcoreapp3.1\Mood_Analyzer.pdb
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\obj\Debug\netcoreapp3.1\Mood_Analyzer.csproj.AssemblyReference.cache
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\obj\Debug\netcoreapp3.1\Mood_Analyzer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\obj\Debug\netcoreapp3.1\Mood_Analyzer.AssemblyInfoInputs.cache
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\obj\Debug\netcoreapp3.1\Mood_Analyzer.AssemblyInfo.cs
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\obj\Debug\netcoreapp3.1\Mood_Analyzer.csproj.CoreCompileInputs.cache
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\obj\Debug\netcoreapp3.1\Mood_Analyzer.dll
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\obj\Debug\netcoreapp3.1\Mood_Analyzer.pdb
+D:\Blabz\RFP\Mood_Analyzer\Mood_Analyzer\obj\Debug\netcoreapp3.1\Mood_Analyzer.genruntimeconfig.cache
