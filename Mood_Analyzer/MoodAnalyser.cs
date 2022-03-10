@@ -6,7 +6,14 @@ namespace Mood_Analyzer
 {
     public class MoodAnalyser
     {
-        public string AnalyseMood(string msg)
+      
+         public string msg;
+        public MoodAnalyser(string msg)
+        {
+            this.msg = msg;
+        }
+
+        public string AnalyseMood()
         {
             if (msg.ToLower().Contains("sad"))
                 return "SAD";
