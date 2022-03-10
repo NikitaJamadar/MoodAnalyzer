@@ -150,5 +150,55 @@ namespace TestMood
                 Assert.AreEqual("Constructor not found", ex.Message);
             }
         }
+        [TestMethod]
+        public void GivenHappy_ShouldReturn_Happy_ReflectorInvoke_method()
+        {
+            string expected = "Happy";
+            string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyseMood");
+            Assert.AreNotEqual(expected, mood);
+        }
+
+        [TestMethod]
+        public void GivenHappy_ShouldReturnException_WithWrongMethodName()
+        {
+            try
+            {
+                string expected = "method not found";
+                string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyseMoodWrong");
+                Assert.AreNotEqual(expected, mood);
+            }
+
+            catch (CustomException ex)
+            {
+                Assert.AreEqual("method not found", ex.Message);
+            }
+        }
+        [TestMethod]
+        public void GivenWrongFieldShouldReturnException()
+        {
+            try
+            {
+                string result = MoodAnalyserFactory.Setfield("Happy", "messageWrong");
+                Assert.AreEqual("Happy", result);
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual("Field not found", ex.Message);
+            }
+        }
+
+        [TestMethod]
+        public void GivenEmptyMessageShouldReturnException()
+        {
+            try
+            {
+                string result = MoodAnalyserFactory.Setfield(null, "messageWrong");
+                Assert.AreEqual("Happy", result);
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual("Message should not be null", ex.Message);
+            }
+        }
     }
 }
