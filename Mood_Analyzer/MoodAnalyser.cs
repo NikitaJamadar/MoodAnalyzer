@@ -6,8 +6,11 @@ namespace Mood_Analyzer
 {
     public class MoodAnalyser
     {
-      
-         public string msg;
+        public string msg;
+        public MoodAnalyser()
+        {
+
+        }
         public MoodAnalyser(string msg)
         {
             this.msg = msg;
@@ -17,11 +20,11 @@ namespace Mood_Analyzer
         {
             try
             {
-                if (this.msg.ToLower().Equals(string.Empty))
+                if (msg.ToLower().Equals(string.Empty))
                 {
                     throw new CustomException(CustomException.ExceptionType.Empty_Type_Exception, "Message should not be empty");
                 }
-                if (this.msg.ToLower().Contains("sad".ToLower()))
+                if (msg.ToLower().Contains("sad".ToLower()))
                 {
                     return "SAD";
                 }
