@@ -17,17 +17,23 @@ namespace Mood_Analyzer
         {
             try
             {
-                if (msg.ToLower().Contains("sad"))
+                if (this.msg.ToLower().Equals(string.Empty))
+                {
+                    throw new CustomException(CustomException.ExceptionType.Empty_Type_Exception, "Message should not be empty");
+                }
+                if (this.msg.ToLower().Contains("sad".ToLower()))
+                {
                     return "SAD";
-
+                }
                 else
+                {
                     return "HAPPY";
+                }
             }
-            catch
+            catch (NullReferenceException)
             {
-                return "Happy";
+                throw new CustomException(CustomException.ExceptionType.Null_Type_Exception, "Message should not be null");
             }
-
         }
     }
 }
