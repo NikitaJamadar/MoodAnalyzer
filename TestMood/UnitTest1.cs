@@ -29,19 +29,40 @@ namespace TestMood
 
             Assert.AreEqual(expected, actual);
         }
-        string message;
+       
         [TestMethod]
-        [DataRow(null)]
-        public void given_NullMood_shouldReturn_Happy(string message)
+
+
+        public void GivenNULLMessage_Throws_CustomNullexception()
         {
+            string expected = "Message should not be null";
+            try
+            {
+                MoodAnalyser moodAnalyser = new MoodAnalyser(null);
+                string result = moodAnalyser.AnalyseMood();
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(expected, ex.Message);
+            }
+        }
 
-            string expected = "Happy";
+        [TestMethod]
+        public void GivenEmptyMessage_throws_CustomEmptyException()
+        {
+            string expected = "Message should not be empty";
+            MoodAnalyser modeAnalyzer = new MoodAnalyser(string.Empty);
 
-            MoodAnalyser mood = new MoodAnalyser(message);
+            try
+            {
+                string actual = modeAnalyzer.AnalyseMood();
 
-            string actual = mood.AnalyseMood();
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(expected, ex.Message);
+            }
 
-            Assert.AreEqual(expected, actual);
         }
     }
 }
