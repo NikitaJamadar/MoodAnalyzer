@@ -29,5 +29,19 @@ namespace TestMood
 
             Assert.AreEqual(expected, actual);
         }
+        string message;
+        [TestMethod]
+        [DataRow(null)]
+        public void given_NullMood_shouldReturn_Happy(string message)
+        {
+
+            string expected = "Happy";
+
+            MoodAnalyser mood = new MoodAnalyser(message);
+
+            string actual = mood.AnalyseMood();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
